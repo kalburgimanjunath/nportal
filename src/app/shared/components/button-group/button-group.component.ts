@@ -25,11 +25,7 @@ export interface ButtonGroupButton {
         (click)="buttonClick.next(button)">
         {{ button.label }}
       </button>
-      <!--<button [ngClass]="['btn btn-default']" 
-      *ngFor="let secbutton of this.plays"
-      (click)="this.buttonClick.next(newbuttons)">
-      {{secbutton}}
-      </button>-->
+    
     </div>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -44,14 +40,9 @@ export class ButtonGroupComponent implements OnInit {
   @Input() newbuttons: ButtonGroupButton[];
   @Output() sec_buttonClick = new EventEmitter<ButtonGroupButton>();
 
-  @Input() plays;
   
   ngOnInit() {
-    this.plays = [
-      'Dance',
-      'Zumba',
-      'motivation'
-    ]
+   
 
   }
 

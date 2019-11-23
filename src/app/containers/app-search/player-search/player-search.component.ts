@@ -78,7 +78,7 @@ export class PlayerSearchComponent implements OnChanges, OnDestroy {
 
   ngOnChanges(changes: SimpleChanges) {
     const changedQuery = changes && changes.query;
-    changedQuery.currentValue = 'Zumba';
+    changedQuery.currentValue = '';
     if (
       changedQuery &&
       changedQuery.currentValue &&
