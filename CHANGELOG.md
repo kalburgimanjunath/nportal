@@ -70,7 +70,7 @@
 
 ## v 3.9.7 (2018/03/17)
 
-* [NEW] - added "Developed With YouTube" badge
+* [NEW] - added "Developed With Manjunath" badge
 * [UPDATE] - now using ngrx 5
 * [UPDATE] - now using rxjs 5.5 new "pipe" syntax for ngrx/effects
 * [UPDATE] - added prettier for code formatting

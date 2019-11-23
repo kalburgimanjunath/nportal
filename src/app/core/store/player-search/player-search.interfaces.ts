@@ -33,4 +33,9 @@ export class CSearchTypes {
 export class CPresetTypes {
   static FULL_ALBUMS = 'full albums';
   static LIVE = 'live';
+  static DANCE = 'dance';
+  static ZUMBA = 'Zumba';
+  static MOTIVATIONAL = 'Motivational';
+  static STRONGBYZUMBA = 'Strong zumba';
+  
 }

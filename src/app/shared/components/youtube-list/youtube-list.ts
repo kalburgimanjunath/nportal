@@ -49,10 +49,10 @@ export class YoutubeListComponent implements OnChanges {
   constructor() {}
 
   ngOnChanges({ queued }: SimpleChanges) {
-    // if (queued && queued.currentValue) {
-    //   console.log('YoutubeListComponent.createIdMap()');
-    //   this.queuedMediaIdMap = createIdMap(queued.currentValue);
-    // }
+    if (queued && queued.currentValue) {
+      console.log('YoutubeListComponent.createIdMap()');
+      this.queuedMediaIdMap = createIdMap(queued.currentValue);
+    }
   }
 
   playSelectedVideo(media) {

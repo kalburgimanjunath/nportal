@@ -8,7 +8,7 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 
-// import './button-group.component.scss';
+//import './button-group.component.scss';
 
 export interface ButtonGroupButton {
   label: string;
@@ -25,6 +25,11 @@ export interface ButtonGroupButton {
         (click)="buttonClick.next(button)">
         {{ button.label }}
       </button>
+      <!--<button [ngClass]="['btn btn-default']" 
+      *ngFor="let secbutton of this.plays"
+      (click)="this.buttonClick.next(newbuttons)">
+      {{secbutton}}
+      </button>-->
     </div>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -36,9 +41,22 @@ export class ButtonGroupComponent implements OnInit {
 
   @Output() buttonClick = new EventEmitter<ButtonGroupButton>();
 
-  ngOnInit() {}
+  @Input() newbuttons: ButtonGroupButton[];
+  @Output() sec_buttonClick = new EventEmitter<ButtonGroupButton>();
+
+  @Input() plays;
+  
+  ngOnInit() {
+    this.plays = [
+      'Dance',
+      'Zumba',
+      'motivation'
+    ]
+
+  }
 
   isSelectedButton(buttonValue: string) {
     return buttonValue === this.selectedButton;
   }
+  
 }

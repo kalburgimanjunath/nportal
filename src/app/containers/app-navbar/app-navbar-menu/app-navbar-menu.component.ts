@@ -43,7 +43,7 @@ enum Key {
             New Version Is Available - UPDATE NOW
           </button>
         </div>
-        <a class="list-group-item" href="https://github.com/orizens/echoes-player" target="_blank" rel="noopener">
+        <!--<a class="list-group-item" href="https://github.com/orizens/echoes-player" target="_blank" rel="noopener">
           <icon name="github" prefix="${ICON_PREFIX_BRAND}"></icon> Source Code @Github
         </a>
         <a class="list-group-item" href="/assets/privacy-policy.txt" target="_blank">
@@ -77,7 +77,7 @@ enum Key {
         </a>
         <a class="list-group-item navbar-action-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdzGRIXoHuzRFZU03EyhgwBJgJp6W1LMatz6Bn44L-5SyuxZA/viewform" target="_blank" rel="noopener">
           <icon name="star-o"></icon> Request New Features
-        </a>
+        </a>-->
         <button class="list-group-item"
           *ngIf="signedIn"
           (click)="handleSignOut()">

@@ -33,6 +33,7 @@ import { Subscription } from 'rxjs';
           type="search" class="form-control" autocomplete="off"
           name="mediaSearch"
           formControlName="searchInput"
+          value=""
           >
         <button class="btn btn-transparent btn-submit" tooltip="search with echoes">
           <icon name="search"></icon>
@@ -48,7 +49,7 @@ export class PlayerSearchComponent implements OnChanges, OnDestroy {
   @Output() search = new EventEmitter();
   // @Output() typing = new EventEmitter<string>();
 
-  @ViewChild('mediaSearch') mediaSearch;
+  @ViewChild('mediaSearch',{static: true}) mediaSearch;
 
   searchForm: FormGroup;
   formState: Subscription;
@@ -61,6 +62,7 @@ export class PlayerSearchComponent implements OnChanges, OnDestroy {
   };
 
   constructor(private fb: FormBuilder) {
+
     this.searchForm = fb.group({
       searchInput: this.query
     });
@@ -76,6 +78,7 @@ export class PlayerSearchComponent implements OnChanges, OnDestroy {
 
   ngOnChanges(changes: SimpleChanges) {
     const changedQuery = changes && changes.query;
+    changedQuery.currentValue = 'Zumba';
     if (
       changedQuery &&
       changedQuery.currentValue &&
@@ -83,6 +86,7 @@ export class PlayerSearchComponent implements OnChanges, OnDestroy {
     ) {
       this.patchSearchInput(changedQuery.currentValue);
     }
+    this.queryChange.emit(changedQuery.currentValue);
   }
 
   ngOnDestroy() {

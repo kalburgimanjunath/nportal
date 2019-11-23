@@ -9,6 +9,7 @@ import {
 export * from './player-search.interfaces';
 
 const initialState: IPlayerSearch = {
+  
   query: '',
   filter: '',
   searchType: CSearchTypes.VIDEO,
@@ -19,7 +20,10 @@ const initialState: IPlayerSearch = {
   presets: [
     { label: 'Any', value: '' },
     { label: 'Albums', value: CPresetTypes.FULL_ALBUMS },
-    { label: 'Live', value: CPresetTypes.LIVE }
+    { label: 'Live', value: CPresetTypes.LIVE },
+    { label: 'Zumba', value: CPresetTypes.ZUMBA },
+    { label: 'Dance', value: CPresetTypes.DANCE },
+    { label: 'Strong zumba', value: CPresetTypes.STRONGBYZUMBA }    
   ],
   pageToken: {
     next: '',

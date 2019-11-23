@@ -24,7 +24,7 @@ const initialPlayerState: IAppPlayer = {
   media: {
     snippet: { title: 'No Media Yet', thumbnails: { default: { url: '' } } }
   },
-  showPlayer: true,
+  showPlayer: false,
   playerState: 0,
   fullscreen: {
     on: false,
