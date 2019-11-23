@@ -23,7 +23,10 @@ const initialState: IPlayerSearch = {
     { label: 'Live', value: CPresetTypes.LIVE },
     { label: 'Zumba', value: CPresetTypes.ZUMBA },
     { label: 'Dance', value: CPresetTypes.DANCE },
-    { label: 'Strong zumba', value: CPresetTypes.STRONGBYZUMBA }    
+    { label: 'Strong zumba', value: CPresetTypes.STRONGBYZUMBA },
+    { label: 'Sitar', value: CPresetTypes.SITAR },
+    { label: 'Vedic chants', value: CPresetTypes.VEDIC },
+    { label: 'For Kids', value: CPresetTypes.KIDS } 
   ],
   pageToken: {
     next: '',
