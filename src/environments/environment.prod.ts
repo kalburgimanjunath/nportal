@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   youtube: {
-    API_KEY: '{YT_API_KEY}',
-    CLIENT_ID: '{YT_CLIENT_ID}'
+    API_KEY: 'AIzaSyA6DqzRUQNRfMIpl8RZjrMWPdh8MOPJfpI',
+    CLIENT_ID: '153683213810-pd0u20b1nj2vtvnerfo1l8vh06uqi4m6.apps.googleusercontent.com'
   }
 };
