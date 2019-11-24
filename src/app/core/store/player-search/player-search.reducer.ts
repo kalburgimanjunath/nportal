@@ -24,9 +24,11 @@ const initialState: IPlayerSearch = {
     { label: 'Zumba', value: CPresetTypes.ZUMBA },
     { label: 'Dance', value: CPresetTypes.DANCE },
     { label: 'Strong zumba', value: CPresetTypes.STRONGBYZUMBA },
-    { label: 'Sitar', value: CPresetTypes.SITAR },
-    { label: 'Vedic chants', value: CPresetTypes.VEDIC },
-    { label: 'For Kids', value: CPresetTypes.KIDS } 
+    // { label: 'Sitar', value: CPresetTypes.SITAR },
+    // { label: 'Vedic chants', value: CPresetTypes.VEDIC },
+    // { label: 'For Kids', value: CPresetTypes.KIDS },
+    { label: 'Bollywood', value: CPresetTypes.BOLLYWOOD } ,
+    { label: 'Cult', value: CPresetTypes.CULT }  
   ],
   pageToken: {
     next: '',

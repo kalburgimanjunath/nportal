@@ -37,8 +37,10 @@ export class CPresetTypes {
   static ZUMBA = 'Zumba';
   static MOTIVATIONAL = 'Motivational';
   static STRONGBYZUMBA = 'Strong zumba';
-  static SITAR = 'Sitar';
-  static VEDIC = 'Vedic chants';
-  static KIDS = 'For Kids';
+  static BOLLYWOOD = 'Bollybeats';
+  static CULT = 'Cult';
+  // static SITAR = 'Sitar';
+  // static VEDIC = 'Vedic chants';
+  // static KIDS = 'For Kids';
 
 }
