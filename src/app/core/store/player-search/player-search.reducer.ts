@@ -28,7 +28,7 @@ const initialState: IPlayerSearch = {
     // { label: 'Vedic chants', value: CPresetTypes.VEDIC },
     // { label: 'For Kids', value: CPresetTypes.KIDS },
     { label: 'Bollywood', value: CPresetTypes.BOLLYWOOD } ,
-    { label: 'Cult', value: CPresetTypes.CULT }  
+    { label: 'Cult fit', value: CPresetTypes.CULT }  
   ],
   pageToken: {
     next: '',
