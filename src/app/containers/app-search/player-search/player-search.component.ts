@@ -23,7 +23,7 @@ import { Subscription } from 'rxjs';
       [formGroup]="searchForm"
       >
       <div class="form-group clearfix is-flex-row">
-        <input placeholder="Find My Echoes..." id="media-search"
+        <input placeholder="Find My songs..." id="media-search"
           #mediaSearch
           ngxTypeahead
           [taUrl]="'//suggestqueries.google.com/complete/search'"
@@ -35,7 +35,7 @@ import { Subscription } from 'rxjs';
           formControlName="searchInput"
           value=""
           >
-        <button class="btn btn-transparent btn-submit" tooltip="search with echoes">
+        <button class="btn btn-transparent btn-submit" tooltip="search with atahska">
           <icon name="search"></icon>
         </button>
       </div>
