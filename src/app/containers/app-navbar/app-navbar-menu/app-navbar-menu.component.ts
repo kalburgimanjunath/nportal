@@ -38,7 +38,7 @@ enum Key {
       >
       <div class="list-group">
         <div *ngIf="appVersion.isNewAvailable" class="list-group-item">
-          <button class="btn btn-success" title="click to update Echoes"
+          <button class="btn btn-success" title="click to update atahska"
             (click)="handleVersionUpdate()">
             New Version Is Available - UPDATE NOW
           </button>
