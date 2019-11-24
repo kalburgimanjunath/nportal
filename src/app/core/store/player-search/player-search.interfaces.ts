@@ -39,6 +39,8 @@ export class CPresetTypes {
   static STRONGBYZUMBA = 'Strong zumba';
   static BOLLYWOOD = 'Bollybeats';
   static CULT = 'Cult fit';
+  static WORKOUT = 'Workout';
+  // static SEX = 'Erotic sex';
   // static SITAR = 'Sitar';
   // static VEDIC = 'Vedic chants';
   // static KIDS = 'For Kids';
